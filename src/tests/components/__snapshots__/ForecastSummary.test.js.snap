@@ -4,6 +4,7 @@ exports[`Forecast Summary displays the correct values 1`] = `
 <DocumentFragment>
   <div
     class="forecast-summary"
+    data-testid="forecast-summary"
   >
     <h3
       class="forecast-summary_date"
@@ -12,13 +13,14 @@ exports[`Forecast Summary displays the correct values 1`] = `
     </h3>
     <div
       class="forecast-summary_icon"
+      data-testid="forecast-icon"
     >
       <img
         alt="icon"
       />
     </div>
     <h2
-      class="forecast-summary_temp"
+      class="forecast-summary_temperature"
     >
       10
       <span>
@@ -26,13 +28,15 @@ exports[`Forecast Summary displays the correct values 1`] = `
       </span>
     </h2>
     <h2
-      class="forecast-summary_desc"
+      class="forecast-summary_description"
     >
       stubdescription
     </h2>
-    <p>
+    <button
+      type="button"
+    >
       More details
-    </p>
+    </button>
   </div>
 </DocumentFragment>
 `;
