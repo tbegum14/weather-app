@@ -19,6 +19,12 @@
     "eject": "react-scripts eject",
     "lint:fix": "npx eslint ./src --ext .js --fix"
   },
+
+  "jest": {
+    "transformIgnorePatterns": [
+      "\"node_modules/(?!axios)/\""
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
