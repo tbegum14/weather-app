@@ -33,14 +33,7 @@ function App() {
 	};
 
 	useEffect(() => {
-		getForecast(
-			setErrorMessage,
-			searchText,
-			setForecasts,
-			setLocation,
-			setSelectedDate
-		);
-		// eslint-disable-next-line react-hooks/exhaustive-deps
+		getForecast(setErrorMessage, "", setForecasts, setLocation, setSelectedDate);
 	}, []);
 
 	return (
